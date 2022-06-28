@@ -25,6 +25,7 @@ class grafit(Frame):
                     # print(len(wfm))
 
                     # CALLING WFMPRE TO CONVERT WFM TO MS AND VOLTS
+                    #f2 = urllib.request.urlopen('http://localhost:5022/?COMMAND=wfmpre?')
                     f2 = urllib.request.urlopen('http://134.79.229.21/?COMMAND=wfmpre?')
                     wfmpre = f2.read().decode()
                     # print(wfmpre)
